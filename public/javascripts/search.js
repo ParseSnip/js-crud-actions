@@ -2,7 +2,7 @@
 document.getElementById('search').onclick = function(){
   let textValue = document.getElementById('search-terms').value
   let priceValue = document.getElementById('price').value
-  let colorValue = document.getElementById('color').value
+  let colorValue = document.getElementById('color').value.toLowerCase()
 
   //if only textvalue is filled 
   if(priceValue === '' && colorValue === ''){
